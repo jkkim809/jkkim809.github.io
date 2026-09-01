@@ -1,0 +1,77 @@
+---
+layout: default
+title: CV
+permalink: /cv/
+description: Curriculum vitae of Jungkwon Kim — experience, education, fellowships, and skills.
+---
+
+{% if site.cv_pdf %}
+<p class="download"><a href="{{ site.cv_pdf | prepend: '/assets/' | relative_url }}">Download CV (PDF)</a></p>
+{% endif %}
+
+<h2 class="band">Experience</h2>
+<ul class="record">
+  {% for job in site.data.cv.experience %}
+  <li>
+    <div class="record-head">
+      <span class="record-role">{{ job.role }}</span>
+      <span class="record-when">{{ job.period }}</span>
+    </div>
+    <div class="record-org">{{ job.org }} · {{ job.location }}</div>
+    {% if job.notes %}
+    <ul class="record-notes">
+      {% for note in job.notes %}<li>{{ note }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
+<h2 class="band">Education</h2>
+<ul class="record">
+  {% for ed in site.data.cv.education %}
+  <li>
+    <div class="record-head">
+      <span class="record-role">{{ ed.degree }}</span>
+      <span class="record-when">{{ ed.period }}</span>
+    </div>
+    <div class="record-org">{{ ed.org }} · {{ ed.location }}</div>
+    {% if ed.notes %}
+    <ul class="record-notes">
+      {% for note in ed.notes %}<li>{{ note }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
+<h2 class="band">Fellowships and scholarships</h2>
+<ul class="record">
+  {% for a in site.data.cv.awards %}
+  <li>
+    <div class="record-head">
+      <span class="record-role">{{ a.name }}</span>
+      <span class="record-when">{{ a.date }}</span>
+    </div>
+    <div class="record-org">{{ a.org }}</div>
+  </li>
+  {% endfor %}
+</ul>
+
+<h2 class="band">Skills</h2>
+<dl class="pairs">
+  {% for s in site.data.cv.skills %}
+  <div>
+    <dt>{{ s.label }}</dt>
+    <dd>{{ s.value }}</dd>
+  </div>
+  {% endfor %}
+</dl>
+
+<h2 class="band">Publications and talks</h2>
+<p>
+  {{ site.data.publications | size }} peer-reviewed papers and
+  {{ site.data.talks | size }} presentations are listed on the
+  <a href="{{ '/publications/' | relative_url }}">publications</a> and
+  <a href="{{ '/talks/' | relative_url }}">talks</a> pages.
+</p>

@@ -1,0 +1,47 @@
+# ─────────────────────────────────────────────
+#  Site settings
+# ─────────────────────────────────────────────
+title: Jungkwon Kim
+tagline: AI Research Team Leader, ELROILAB
+description: >-
+  Research on hyperspectral imaging, anomaly detection, and partial differential equations via Harmonic Analysis.
+
+# GitHub Pages 개인 사이트이므로 baseurl 은 비워 둡니다.
+url: "https://jkkim809.github.io"
+baseurl: ""
+
+# ─────────────────────────────────────────────
+#  Profile
+# ─────────────────────────────────────────────
+author:
+  name: Jungkwon Kim
+  degree: Ph.D.
+  role: AI Research Team Leader
+  affiliation: ELROILAB, Inc.
+  location: Seoul, Korea
+
+# 링크는 값을 채우면 자동으로 표시되고, 비워 두면 숨겨집니다.
+links:
+  email: kimjk809@gmail.com      # 공개하려면 주석을 해제하세요
+  github: jkkim809
+  # scholar: https://scholar.google.com/citations?user=XXXXXXXX
+  # orcid: https://orcid.org/0000-0000-0000-0000
+  # linkedin: https://www.linkedin.com/in/xxxxxxxx
+
+# CV PDF 를 assets/ 에 올린 뒤 파일명을 적으면 CV 페이지에 다운로드 링크가 생깁니다.
+cv_pdf: # jungkwon-kim-cv.pdf
+
+# ─────────────────────────────────────────────
+#  Build
+# ─────────────────────────────────────────────
+markdown: kramdown
+permalink: /:title/
+
+collections_dir: .
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .jekyll-cache

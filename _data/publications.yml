@@ -1,0 +1,89 @@
+# 논문을 추가할 때는 이 파일 맨 위에 항목 하나만 붙여 넣으면 됩니다.
+#   year    : 정렬과 좌측 연도 표시에 쓰입니다
+#   type    : conference | journal
+#   authors : 본인 이름은 <strong> 로 감싸면 굵게 표시됩니다
+#   status  : 값이 있으면 제목 옆에 배지로 표시됩니다 (예: Accepted)
+
+- title: "Nonlinear Spectral Unmixing for Enhanced Data Augmentation in Hyperspectral Anomaly Detection"
+  authors: "<strong>J. Kim</strong>, C. Zhang, J. Kim, J. Park, K. Yoo, S.-J. Byun"
+  venue: "IEEE International Conference on Image Processing (ICIP)"
+  year: 2026
+  type: conference
+  status: Accepted
+
+- title: "LiteSSFNet: A Lightweight Spectral–Spatial Fusion Network for Few-Shot Hyperspectral Image Classification"
+  authors: "J. Kim, <strong>J. Kim</strong>, C. Zhang, J. Park, K. Yoo, S.-J. Byun"
+  venue: "IEEE World Congress on Computational Intelligence (WCCI)"
+  year: 2026
+  type: conference
+  status: Accepted
+
+- title: "Physically Motivated Partial-Spectrum Denoising for Robust Hyperspectral Anomaly Detection"
+  authors: "<strong>J. Kim</strong>, C. Zhang, J. Kim, J. Park, K. Yoo, S.-J. Byun"
+  venue: "Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD)"
+  year: 2026
+  type: conference
+  status: Accepted
+
+- title: "Mitigating Long-Tailed Anomaly Score Distributions with Importance Weighted Loss"
+  authors: "J. Lee, <strong>J. Kim</strong>, C. Zhang, S. Kim, K. Yoo, S.-J. Byun"
+  venue: "IEEE International Joint Conference on Neural Networks (IJCNN)"
+  location: "Rome, Italy"
+  year: 2025
+  type: conference
+
+- title: "Aggressive Rejection with Adaptive Gradient for Contaminated Data"
+  authors: "J. Lee, <strong>J. Kim</strong>, C. Zhang, S. Kim, K. Yoo, S.-J. Byun"
+  venue: "IEEE International Conference on Image Processing (ICIP)"
+  location: "Anchorage, Alaska, USA"
+  year: 2025
+  type: conference
+
+- title: "Spectral Mixing Augmentation for Preventing False Positives from Hyperspectral Anomaly Detection"
+  authors: "S. Kim, <strong>J. Kim</strong>, C. Zhang, J. Lee, K. Yoo, S.-J. Byun"
+  venue: "IEEE International Conference on Image Processing (ICIP)"
+  location: "Anchorage, Alaska, USA"
+  year: 2025
+  type: conference
+
+- title: "Two-Stage Framework for Enhanced Hyperspectral Anomaly Detection"
+  authors: "C. Zhang, <strong>J. Kim</strong>, S. Kim, J. Lee, K. Yoo, S.-J. Byun"
+  venue: "IEEE International Conference on Image Processing (ICIP)"
+  location: "Anchorage, Alaska, USA"
+  year: 2025
+  type: conference
+
+- title: "GLESim: An Integrated New Similarity Index for Global and Local Spectral Analysis in Hyperspectral Imaging"
+  authors: "<strong>J. Kim</strong>, S. Kim, J. Lee, K. Yoo, S.-J. Byun"
+  venue: "IEEE International Geoscience and Remote Sensing Symposium (IGARSS)"
+  location: "Brisbane, Australia"
+  year: 2025
+  type: conference
+
+- title: "Metric-Driven Similarity Indices: Redefining Spectral Distance Comparisons in Hyperspectral Data"
+  authors: "<strong>J. Kim</strong>, J. Jung, J. Lee, K. Yoo, S.-J. Byun"
+  venue: "International Conference on Artificial Intelligence in Information and Communication (ICAIIC)"
+  location: "Fukuoka, Japan"
+  year: 2025
+  type: conference
+
+- title: "Endpoint Strichartz estimates with angular integrability and some applications"
+  authors: "<strong>J. Kim</strong>, Y. Lee, I. Seo"
+  venue: "Journal of Evolution Equations"
+  detail: "vol. 22, no. 37"
+  year: 2022
+  type: journal
+
+- title: "On well-posedness for the inhomogeneous nonlinear Schrödinger equation in the critical case"
+  authors: "<strong>J. Kim</strong>, Y. Lee, I. Seo"
+  venue: "Journal of Differential Equations"
+  detail: "vol. 280"
+  year: 2021
+  type: journal
+
+- title: "On Morawetz estimates with time-dependent weights for the Klein–Gordon equation"
+  authors: "<strong>J. Kim</strong>, H. Lee, I. Seo, J. Seok"
+  venue: "Discrete and Continuous Dynamical Systems"
+  detail: "vol. 40"
+  year: 2020
+  type: journal

@@ -1,0 +1,16 @@
+<nav class="nav" aria-label="Sections">
+  {% assign p = page.url %}
+  <a href="{{ '/' | relative_url }}"{% if p == '/' %} aria-current="page"{% endif %}>Overview</a>
+  <a href="{{ '/publications/' | relative_url }}"{% if p contains 'publications' %} aria-current="page"{% endif %}>Publications</a>
+  <a href="{{ '/talks/' | relative_url }}"{% if p contains 'talks' %} aria-current="page"{% endif %}>Talks</a>
+  <a href="{{ '/cv/' | relative_url }}"{% if p contains 'cv' %} aria-current="page"{% endif %}>CV</a>
+
+  {% if site.links.email or site.links.github or site.links.scholar or site.links.orcid or site.links.linkedin %}
+  <span class="nav-rule" aria-hidden="true"></span>
+  {% if site.links.email %}<a href="mailto:{{ site.links.email }}">Email</a>{% endif %}
+  {% if site.links.github %}<a href="https://github.com/{{ site.links.github }}">GitHub</a>{% endif %}
+  {% if site.links.scholar %}<a href="{{ site.links.scholar }}">Scholar</a>{% endif %}
+  {% if site.links.orcid %}<a href="{{ site.links.orcid }}">ORCID</a>{% endif %}
+  {% if site.links.linkedin %}<a href="{{ site.links.linkedin }}">LinkedIn</a>{% endif %}
+  {% endif %}
+</nav>

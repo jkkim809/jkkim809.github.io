@@ -1,0 +1,50 @@
+experience:
+  - role: "AI Research — Team Leader"
+    org: "ELROILAB, Inc."
+    location: "Seoul, Korea"
+    period: "Jul 2025 — present"
+    notes:
+      - "Lead research on deep-learning-based hyperspectral anomaly detection for food inspection systems."
+
+  - role: "AI Research — Team Member"
+    org: "ELROILAB, Inc."
+    location: "Seoul, Korea"
+    period: "Oct 2024 — Jun 2025"
+    notes:
+      - "Spectral analysis and anomaly detection algorithms."
+
+education:
+  - degree: "Ph.D. in Mathematics"
+    org: "Sungkyunkwan University"
+    location: "Suwon, Korea"
+    period: "Sep 2017 — Aug 2024"
+    notes:
+      - "Area: partial differential equations and harmonic analysis."
+      - "Thesis: <em>Weighted a priori estimates and some applications to nonlinear dispersive equations</em> (advisor: Prof. Ihyeok Seo)."
+
+  - degree: "B.S. in Mathematics Education"
+    org: "Sungkyunkwan University"
+    location: "Seoul, Korea"
+    period: "Mar 2010 — Feb 2016"
+
+awards:
+  - name: "BK21 Four Research Incentive Fellowship"
+    org: "Sungkyunkwan University"
+    date: "Dec 2022"
+  - name: "BK21 Four Specialized Fellowship"
+    org: "Sungkyunkwan University"
+    date: "Jan 2022"
+  - name: "National Scholarship for Science and Engineering"
+    org: "Korea Student Aid Foundation"
+    date: "2014, 2015"
+  - name: "Academic Excellence Scholarship"
+    org: "Sungkyunkwan University"
+    date: "2010, 2013"
+
+skills:
+  - label: "Languages"
+    value: "Korean, English"
+  - label: "Programming"
+    value: "Python, Mathematica"
+  - label: "Tools"
+    value: "LaTeX"

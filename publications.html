@@ -1,0 +1,43 @@
+---
+layout: default
+title: Publications
+permalink: /publications/
+description: Peer-reviewed conference and journal publications by Jungkwon Kim.
+---
+
+{% assign conf = site.data.publications | where: "type", "conference" %}
+{% assign jour = site.data.publications | where: "type", "journal" %}
+
+<h2 class="band">Conference proceedings</h2>
+
+{% assign last_year = "" %}
+<ul class="chron">
+  {% for pub in conf %}
+  <li>
+    <span class="year{% if pub.year == last_year %} is-repeat{% endif %}">{{ pub.year }}</span>
+    <div>
+      <span class="entry-title">{{ pub.title }}{% if pub.status %}<span class="badge">{{ pub.status }}</span>{% endif %}</span>
+      <span class="authors">{{ pub.authors }}</span>
+      <span class="venue">{{ pub.venue }}{% if pub.location %} · {{ pub.location }}{% endif %}</span>
+    </div>
+  </li>
+  {% assign last_year = pub.year %}
+  {% endfor %}
+</ul>
+
+<h2 class="band">Journal articles</h2>
+
+{% assign last_year = "" %}
+<ul class="chron">
+  {% for pub in jour %}
+  <li>
+    <span class="year{% if pub.year == last_year %} is-repeat{% endif %}">{{ pub.year }}</span>
+    <div>
+      <span class="entry-title">{{ pub.title }}</span>
+      <span class="authors">{{ pub.authors }}</span>
+      <span class="venue">{{ pub.venue }}{% if pub.detail %}, {{ pub.detail }}{% endif %}</span>
+    </div>
+  </li>
+  {% assign last_year = pub.year %}
+  {% endfor %}
+</ul>

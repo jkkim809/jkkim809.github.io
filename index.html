@@ -1,1 +1,56 @@
-"Hello World" 
+---
+layout: default
+title: Home
+permalink: /
+---
+
+<p class="lede">
+  I work on anomaly detection in hyperspectral imaging — teaching models to find the anomalous objects in a
+  scene that do not belong, using the full spectrum of light rather than
+  colour alone.
+</p>
+
+<p>
+  My background is in mathematics. I completed a Ph.D. at Sungkyunkwan University
+  on partial differential equations and harmonic analysis, studying weighted
+  estimates for nonlinear dispersive equations. 
+</p>
+
+
+
+<p>
+  I now lead the AI research team at ELROILAB, where we build anomaly detection
+  systems for industrial food inspection. A hyperspectral camera records hundreds
+  of narrow wavelength bands per pixel, so a foreign object that looks identical
+  to food under a normal camera often separates cleanly in spectral space. Getting
+  that separation to hold on a production line — with contaminated training data,
+  a long tail of rare defects, and a latency budget — is the research problem.
+</p>
+
+<p>
+  Recent work has focused on spectral unmixing for data augmentation, physically
+  motivated denoising, and similarity measures designed for spectra rather than
+  generic vectors.
+</p>
+
+<h2 class="band">Recent publications</h2>
+
+{% assign recent = site.data.publications | slice: 0, 5 %}
+{% assign last_year = "" %}
+<ul class="chron">
+  {% for pub in recent %}
+  <li>
+    <span class="year{% if pub.year == last_year %} is-repeat{% endif %}">{{ pub.year }}</span>
+    <div>
+      <span class="entry-title">{{ pub.title }}{% if pub.status %}<span class="badge">{{ pub.status }}</span>{% endif %}</span>
+      <span class="authors">{{ pub.authors }}</span>
+      <span class="venue">{{ pub.venue }}{% if pub.detail %}, {{ pub.detail }}{% endif %}{% if pub.location %} · {{ pub.location }}{% endif %}</span>
+    </div>
+  </li>
+  {% assign last_year = pub.year %}
+  {% endfor %}
+</ul>
+
+<p style="margin-top:1.5rem">
+  <a href="{{ '/publications/' | relative_url }}">All {{ site.data.publications | size }} publications</a>
+</p>

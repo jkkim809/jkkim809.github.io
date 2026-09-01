@@ -1,0 +1,23 @@
+---
+layout: default
+title: Talks
+permalink: /talks/
+description: Oral and poster presentations by Jungkwon Kim.
+---
+
+<h2 class="band">Oral and poster presentations</h2>
+
+{% assign last_year = "" %}
+<ul class="chron">
+  {% for talk in site.data.talks %}
+  <li>
+    <span class="year{% if talk.year == last_year %} is-repeat{% endif %}">{{ talk.year }}</span>
+    <div>
+      <span class="entry-title">{{ talk.title }}</span>
+      <span class="authors">{{ talk.event }}</span>
+      <span class="venue">{{ talk.location }} · {{ talk.date }}</span>
+    </div>
+  </li>
+  {% assign last_year = talk.year %}
+  {% endfor %}
+</ul>

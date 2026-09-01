@@ -1,0 +1,289 @@
+---
+# 이 앞머리(front matter)는 Jekyll 이 파일을 처리하게 하려고 비워 둔 것입니다. 지우지 마세요.
+---
+
+/* ============================================================
+   Tokens
+   ============================================================ */
+:root {
+  --paper:      #FAFAF7;
+  --ink:        #1B1E26;
+  --ink-soft:   #565A68;
+  --ink-faint:  #8A8E9C;
+  --rule:       #E4E3DD;
+  --rule-soft:  #EFEEE9;
+  --accent:     #2A4C8F;
+
+  --serif: "Spectral", Georgia, "Times New Roman", serif;
+  --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --measure: 46rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1rem;
+  line-height: 1.68;
+  font-feature-settings: "onum" 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: var(--measure);
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 0.14em; }
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.skip {
+  position: absolute;
+  left: -9999px;
+}
+.skip:focus {
+  left: 1rem; top: 1rem;
+  background: var(--ink); color: var(--paper);
+  padding: 0.5rem 0.9rem; z-index: 10;
+}
+
+/* ============================================================
+   Masthead — the spectral rule is the one loud element here
+   ============================================================ */
+.masthead { padding-top: 4.5rem; }
+
+.wordmark {
+  margin: 0;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 2.75rem;
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+}
+.wordmark a { color: inherit; text-decoration: none; }
+
+.spectrum {
+  height: 4px;
+  margin-top: 0.85rem;
+  border-radius: 2px;
+  background: linear-gradient(90deg,
+    #5B3FA8 0%, #2A6FC4 18%, #17A0A8 36%,
+    #4FA83F 54%, #D9B23A 72%, #D9762F 87%, #B8342E 100%);
+}
+
+.standfirst {
+  margin: 0.9rem 0 0;
+  font-family: var(--sans);
+  font-size: 0.9375rem;
+  color: var(--ink-soft);
+}
+
+.nav {
+  margin-top: 1.5rem;
+  padding-bottom: 2.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 1.15rem;
+  font-family: var(--sans);
+  font-size: 0.9375rem;
+}
+.nav a { color: var(--ink-soft); }
+.nav a:hover { color: var(--accent); }
+.nav a[aria-current="page"] {
+  color: var(--ink);
+  font-weight: 500;
+  box-shadow: inset 0 -2px 0 var(--ink);
+}
+.nav-rule {
+  width: 1px; height: 0.9em;
+  background: var(--rule);
+}
+
+/* ============================================================
+   Prose
+   ============================================================ */
+main { padding-bottom: 4rem; }
+
+.lede {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin: 0 0 1.4rem;
+}
+
+main p { margin: 0 0 1.1rem; max-width: 40rem; }
+
+h2.band {
+  margin: 3.25rem 0 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+}
+h2.band:first-child { margin-top: 0; }
+
+/* ============================================================
+   Chronological entries — the year gutter carries the timeline
+   ============================================================ */
+.chron { list-style: none; margin: 0; padding: 0; }
+
+.chron > li {
+  display: grid;
+  grid-template-columns: 4.25rem 1fr;
+  gap: 0 1.25rem;
+  padding: 1.05rem 0;
+  border-top: 1px solid var(--rule-soft);
+}
+.chron > li:first-child { border-top: 0; padding-top: 0.25rem; }
+
+.year {
+  font-family: var(--sans);
+  font-size: 0.8125rem;
+  color: var(--ink-faint);
+  padding-top: 0.32em;
+  font-variant-numeric: tabular-nums;
+}
+.year.is-repeat { visibility: hidden; }
+
+.entry-title {
+  display: block;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.authors {
+  display: block;
+  margin-top: 0.2rem;
+  font-family: var(--sans);
+  font-size: 0.875rem;
+  color: var(--ink-soft);
+}
+.authors strong { color: var(--ink); font-weight: 600; }
+
+.venue {
+  display: block;
+  margin-top: 0.15rem;
+  font-family: var(--sans);
+  font-size: 0.875rem;
+  color: var(--ink-faint);
+}
+
+.badge {
+  display: inline-block;
+  margin-left: 0.45rem;
+  padding: 0.05rem 0.4rem;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  font-family: var(--sans);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  vertical-align: 0.15em;
+  white-space: nowrap;
+}
+
+/* ============================================================
+   CV blocks
+   ============================================================ */
+.record { list-style: none; margin: 0; padding: 0; }
+
+.record > li {
+  padding: 1.15rem 0;
+  border-top: 1px solid var(--rule-soft);
+}
+.record > li:first-child { border-top: 0; padding-top: 0.25rem; }
+
+.record-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+}
+.record-role { font-weight: 500; }
+.record-when {
+  font-family: var(--sans);
+  font-size: 0.8125rem;
+  color: var(--ink-faint);
+  font-variant-numeric: tabular-nums;
+}
+.record-org {
+  margin-top: 0.1rem;
+  font-family: var(--sans);
+  font-size: 0.875rem;
+  color: var(--ink-soft);
+}
+.record-notes {
+  margin: 0.5rem 0 0;
+  padding-left: 1.05rem;
+}
+.record-notes li { margin-bottom: 0.25rem; }
+
+.pairs { margin: 0; }
+.pairs div {
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+  gap: 0 1rem;
+  padding: 0.4rem 0;
+}
+.pairs dt {
+  font-family: var(--sans);
+  font-size: 0.875rem;
+  color: var(--ink-faint);
+}
+.pairs dd { margin: 0; }
+
+.download {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-family: var(--sans);
+  font-size: 0.9375rem;
+}
+
+/* ============================================================
+   Colophon
+   ============================================================ */
+.colophon {
+  border-top: 1px solid var(--rule);
+  padding: 1.75rem 0 3.5rem;
+  font-family: var(--sans);
+  font-size: 0.8125rem;
+  color: var(--ink-faint);
+}
+.colophon p { margin: 0 0 0.2rem; }
+.colophon .fine { color: var(--rule); color: #B4B7C2; }
+
+/* ============================================================
+   Narrow screens
+   ============================================================ */
+@media (max-width: 34rem) {
+  .masthead { padding-top: 2.75rem; }
+  .wordmark { font-size: 2rem; }
+
+  .chron > li {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .year { padding-top: 0; margin-bottom: 0.25rem; }
+  .year.is-repeat { display: none; }
+
+  .pairs div { grid-template-columns: 1fr; gap: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
