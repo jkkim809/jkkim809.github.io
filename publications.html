@@ -16,7 +16,7 @@ description: Peer-reviewed conference and journal publications by Jungkwon Kim.
   <li>
     <span class="year{% if pub.year == last_year %} is-repeat{% endif %}">{{ pub.year }}</span>
     <div>
-      <span class="entry-title">{{ pub.title }}{% if pub.status %}<span class="badge">{{ pub.status }}</span>{% endif %}</span>
+      <span class="entry-title">{% if pub.url %}<a href="{{ pub.url }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}{% if pub.status %}<span class="badge">{{ pub.status }}</span>{% endif %}</span>
       <span class="authors">{{ pub.authors }}</span>
       <span class="venue">{{ pub.venue }}{% if pub.location %} · {{ pub.location }}{% endif %}</span>
     </div>
@@ -33,7 +33,7 @@ description: Peer-reviewed conference and journal publications by Jungkwon Kim.
   <li>
     <span class="year{% if pub.year == last_year %} is-repeat{% endif %}">{{ pub.year }}</span>
     <div>
-      <span class="entry-title">{{ pub.title }}</span>
+      <span class="entry-title">{% if pub.url %}<a href="{{ pub.url }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</span>
       <span class="authors">{{ pub.authors }}</span>
       <span class="venue">{{ pub.venue }}{% if pub.detail %}, {{ pub.detail }}{% endif %}</span>
     </div>

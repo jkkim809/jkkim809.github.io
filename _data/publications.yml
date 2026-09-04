@@ -17,13 +17,14 @@
   year: 2026
   type: conference
   status: Accepted
+  url: "https://linklings.s3.amazonaws.com/organizations/WCCI/wcci2026/submissions/stype114/kp81c-ijcnn_pap3032s2.pdf"
 
 - title: "Physically Motivated Partial-Spectrum Denoising for Robust Hyperspectral Anomaly Detection"
   authors: "<strong>J. Kim</strong>, C. Zhang, J. Kim, J. Park, K. Yoo, S.-J. Byun"
   venue: "Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD)"
   year: 2026
   type: conference
-  status: Accepted
+  url: "https://link.springer.com/chapter/10.1007/978-981-92-1926-1_25"
 
 - title: "Mitigating Long-Tailed Anomaly Score Distributions with Importance Weighted Loss"
   authors: "J. Lee, <strong>J. Kim</strong>, C. Zhang, S. Kim, K. Yoo, S.-J. Byun"
@@ -31,6 +32,7 @@
   location: "Rome, Italy"
   year: 2025
   type: conference
+  url: "https://ieeexplore.ieee.org/document/11229283"
 
 - title: "Aggressive Rejection with Adaptive Gradient for Contaminated Data"
   authors: "J. Lee, <strong>J. Kim</strong>, C. Zhang, S. Kim, K. Yoo, S.-J. Byun"
@@ -38,6 +40,7 @@
   location: "Anchorage, Alaska, USA"
   year: 2025
   type: conference
+  url: "https://ieeexplore.ieee.org/document/11084635"
 
 - title: "Spectral Mixing Augmentation for Preventing False Positives from Hyperspectral Anomaly Detection"
   authors: "S. Kim, <strong>J. Kim</strong>, C. Zhang, J. Lee, K. Yoo, S.-J. Byun"
@@ -45,6 +48,7 @@
   location: "Anchorage, Alaska, USA"
   year: 2025
   type: conference
+  url: "https://ieeexplore.ieee.org/document/11084591"
 
 - title: "Two-Stage Framework for Enhanced Hyperspectral Anomaly Detection"
   authors: "C. Zhang, <strong>J. Kim</strong>, S. Kim, J. Lee, K. Yoo, S.-J. Byun"
@@ -52,6 +56,7 @@
   location: "Anchorage, Alaska, USA"
   year: 2025
   type: conference
+  url: "https://ieeexplore.ieee.org/abstract/document/11084330"
 
 - title: "GLESim: An Integrated New Similarity Index for Global and Local Spectral Analysis in Hyperspectral Imaging"
   authors: "<strong>J. Kim</strong>, S. Kim, J. Lee, K. Yoo, S.-J. Byun"
@@ -59,6 +64,7 @@
   location: "Brisbane, Australia"
   year: 2025
   type: conference
+  url: "https://ieeexplore.ieee.org/document/11242381"
 
 - title: "Metric-Driven Similarity Indices: Redefining Spectral Distance Comparisons in Hyperspectral Data"
   authors: "<strong>J. Kim</strong>, J. Jung, J. Lee, K. Yoo, S.-J. Byun"
@@ -66,6 +72,7 @@
   location: "Fukuoka, Japan"
   year: 2025
   type: conference
+  url: "https://ieeexplore.ieee.org/document/10920731/"
 
 - title: "Endpoint Strichartz estimates with angular integrability and some applications"
   authors: "<strong>J. Kim</strong>, Y. Lee, I. Seo"
@@ -73,6 +80,7 @@
   detail: "vol. 22, no. 37"
   year: 2022
   type: journal
+  url: "https://link.springer.com/article/10.1007/s00028-022-00797-4"
 
 - title: "On well-posedness for the inhomogeneous nonlinear Schrödinger equation in the critical case"
   authors: "<strong>J. Kim</strong>, Y. Lee, I. Seo"
@@ -80,6 +88,7 @@
   detail: "vol. 280"
   year: 2021
   type: journal
+  url: "https://www.sciencedirect.com/science/article/pii/S002203962100036X"
 
 - title: "On Morawetz estimates with time-dependent weights for the Klein–Gordon equation"
   authors: "<strong>J. Kim</strong>, H. Lee, I. Seo, J. Seok"
@@ -87,3 +96,4 @@
   detail: "vol. 40"
   year: 2020
   type: journal
+  url: "https://www.aimsciences.org/article/doi/10.3934/dcds.2020279"
