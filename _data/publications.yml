@@ -1,8 +1,8 @@
-# 논문을 추가할 때는 이 파일 맨 위에 항목 하나만 붙여 넣으면 됩니다.
-#   year    : 정렬과 좌측 연도 표시에 쓰입니다
+# 논문을 추가시 이 파일 맨 위에 항목 하나만 붙여 넣기
+#   year    : 정렬과 좌측 연도 표시 사용
 #   type    : conference | journal
-#   authors : 본인 이름은 <strong> 로 감싸면 굵게 표시됩니다
-#   status  : 값이 있으면 제목 옆에 배지로 표시됩니다 (예: Accepted)
+#   authors : 내 이름은 <strong> 로 감싸면 굵게 표시
+#   status  : 값이 있으면 제목 옆에 배지로 표시 (예: Accepted)
 
 - title: "Nonlinear Spectral Unmixing for Enhanced Data Augmentation in Hyperspectral Anomaly Detection"
   authors: "<strong>J. Kim</strong>, C. Zhang, J. Kim, J. Park, K. Yoo, S.-J. Byun"
