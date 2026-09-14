@@ -11,6 +11,13 @@
   type: conference
   status: Accepted
 
+- title: "HSIFoodInspection: A Comprehensive Hyperspectral Dataset for Industrial Food Anomaly Detection"
+  authors: "C. Zhang, <strong>J. Kim</strong>, J. Kim, J. Park, K. Yoo, S.-J. Byun"
+  venue: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops"
+  year: 2026
+  type: conference
+  url: "https://openaccess.thecvf.com/content/CVPR2026W/MTF/html/Zhang_HSIFoodInspection_A_Comprehensive_Hyperspectral_Dataset_for_Industrial_Food_Anomaly_Detection_CVPRW_2026_paper.html"
+
 - title: "LiteSSFNet: A Lightweight Spectral–Spatial Fusion Network for Few-Shot Hyperspectral Image Classification"
   authors: "J. Kim, <strong>J. Kim</strong>, C. Zhang, J. Park, K. Yoo, S.-J. Byun"
   venue: "IEEE World Congress on Computational Intelligence (WCCI)"
