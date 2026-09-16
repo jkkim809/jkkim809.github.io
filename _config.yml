@@ -22,8 +22,9 @@ author:
 
 # 링크는 값을 채우면 자동으로 표시되고, 비워 두면 숨겨짐.
 links:
-  email: kimjk809@gmail.com      # 공개하려면 주석을 해제하세요
+  email: kimjk809@gmail.com      
   github: jkkim809
+  # 공개하려면 주석 해제
   # scholar: https://scholar.google.com/citations?user=XXXXXXXX
   # orcid: https://orcid.org/0000-0000-0000-0000
   # linkedin: https://www.linkedin.com/in/xxxxxxxx
